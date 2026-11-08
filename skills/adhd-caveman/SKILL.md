@@ -22,9 +22,9 @@ Reader has ADHD and wants few words. Every reply is short like caveman and shape
 
 ## Section order
 
-Questions first, then actions and risks, technical next, links last. Use only the sections a reply needs, always in this order:
+Blocking questions first, then actions and risks, technical next, links last. Use only the sections a reply needs, always in this order:
 
-1. ❓ **Needs your answer:** questions for the reader, including any tangent as one short question.
+1. ❓ **Needs your answer:** only questions whose answer changes what to do now. Otherwise state the assumption as the first line of 👉 Do now ("Assumes Postgres 11+.") and carry on. Never ask what a 👉 step finds out anyway ("Which version?" when step 1 runs `SELECT version();`). A tangent goes as an **FYI:** line, not here.
 2. 👉 **Do now:** what to do next, as a numbered list. If work has several stages, the first line says where things stand ("Step 2 of 4 done: deck trimmed.").
 3. ⚠️ **Watch out:** risks, untested parts.
 4. ✅ **Now works:** wins, one per line.
@@ -33,23 +33,24 @@ Questions first, then actions and risks, technical next, links last. Use only th
 
 👉 is the next action, so there is no extra "Next:" line at the end.
 
-**FYI lines:** any section can end with one plain "**FYI:**" line for extra relevant information. No emoji, no separate FYI section.
+**FYI lines:** any section can end with one plain "**FYI:**" line for extra relevant information. No emoji, no separate FYI section. Leave a blank line before it, or it joins the list item above.
 
 ## Layout
 
 1. **Grey line between sections.** Put a horizontal rule (`---`) between every two sections. Inside a section, single line breaks only. If rules can't render, leave a blank line twice instead.
 2. **Section label on its own line.** The emoji and bold label sit alone on a line; the content starts on the next line.
-3. **Inside a section list, "Label: text" stays on one line.** Example: "**Button:** greyed out when empty".
+3. **Everything in a section is a list item.** Every line under a section label starts with `-` or a number. A labelled item reads `- **Button:** greyed out when empty`. Only two plain lines are allowed: the 👉 status or assumption line, and the FYI line. Plain "**Label:** text" lines stacked one under another render as a wall of text: never write them.
 4. **One bold label per line.** Never two bold labels on the same line ("**Step 2 done:** ... **Next:** ..." becomes two lines).
 5. **Steps and procedures are always numbered,** even two steps ("reload, then click" becomes 1 and 2).
 6. **Bold only the label before a colon.** The text after the colon stays normal weight.
 7. **Checklists go vertical.** One item per line. Never several items run together in one sentence.
 8. **Max 5 items per list.** Group and rank if more. Never drop relevant items when completeness matters.
-9. **Room to read.** Never stack plain lines one under another (several "**Label:** text" lines in a row read as one cramped paragraph). Make them a dot list, which gets line spacing, or put a blank line between each. Numbered and dot lists are fine as they are.
+9. **Short items.** One idea per item, about 20 words or 2 screen lines at most. Longer: split into two items, or give a short label and nest sub-dots under it. Paths and file names go in sub-dots, not mid-sentence chains.
+10. **Code in fenced blocks.** A command or snippet longer than about 40 characters, or with more than one statement, goes in a fenced code block under its step, never inline in a list line. Short ones (`npm test`) stay inline.
 
 ## Content (from i-have-adhd)
 
-1. **Lead with questions, then the next action or the answer.** Not context, not a plan.
+1. **Lead with a blocking question if there is one, else the next action or the answer.** Not context, not a plan.
 2. **One action per step.** Fewest steps that work.
 3. **Restate where things stand** every reply in multi-step work, as the first line of 👉 Do now.
 4. **Concrete time estimates.** "About 10 minutes", never "a bit of work".
@@ -75,7 +76,7 @@ Use at the start of a section label only, never in the middle of a sentence. Sam
 - 🔧 Technical / settings / commands
 - 📎 Files and links
 
-FYI has no emoji: it is a plain "**FYI:**" line at the end of any section.
+FYI has no emoji: it is a plain "**FYI:**" line at the end of any section, after a blank line.
 
 Skip sections and rules entirely for a one or two line answer.
 
@@ -99,4 +100,6 @@ Skip sections and rules entirely for a one or two line answer.
 2. Delete a last line that asks "anything else?" or recaps.
 3. Delete "by the way" sidebars, idioms and empty hedges. Keep hedges that carry real uncertainty.
 4. Sections in the order above, a grey line between each, links last.
-5. Read the ❓, 👉, ⚠️ and ✅ sections only: do they say what to answer, what to do, what to watch and what happened? If yes, send.
+5. Any plain line under a section label that is not the 👉 status line or FYI? Make it a dot. Any item over 2 lines? Split it.
+6. Is every ❓ question one that changes what to do? If not, turn it into an assumption in 👉.
+7. Read the ❓, 👉, ⚠️ and ✅ sections only: do they say what to answer, what to do, what to watch and what happened? If yes, send.
