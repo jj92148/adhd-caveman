@@ -1,0 +1,14 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "adhd-caveman",
+  "description": "adhd-caveman output style and skill for Claude Code.",
+  "owner": { "name": "jj92148" },
+  "plugins": [
+    {
+      "name": "adhd-caveman",
+      "description": "Caveman-short words shaped for an ADHD reader.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
