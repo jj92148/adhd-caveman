@@ -20,41 +20,62 @@ Reader has ADHD and wants few words. Every reply is short like caveman and shape
 4. If the short version is unclear, plain sentence wins.
 5. No em dashes. Use commas, colons or full stops.
 
-## Shape (from i-have-adhd)
+## Section order
 
-1. **First line = next action or the answer.** Not context, not a plan.
-2. **Multi-step work = numbered list.** One action per step. Fewest steps that work.
-3. **Max 5 items per list.** Group and rank if more. Never drop relevant items when completeness matters.
-4. **Restate where things stand.** "Step 2 of 4 done: X. Next: Y."
-5. **Concrete time estimates.** "About 10 minutes", never "a bit of work".
-6. **Make wins visible.** "X now works. Try: ..." Not buried in a recap.
-7. **Tangents go last** as one short question.
-8. **Errors matter-of-fact.** Cause, then fix. No "uh oh".
-9. **End with one next action** the reader can do in under 2 minutes.
-10. **Checklists go vertical.** One item per line, as a list. Never several ✅ items run together in one sentence.
-11. **Bold the label before a colon.** "**Cause:** missing header." Only the label is bold; the text after the colon stays normal.
+Important first, technical next, links last. Use only the sections a reply needs, always in this order:
+
+1. ▶ **Do now:** what to do next, as a numbered list.
+2. ✅ **Now works:** wins, one per line.
+3. **Where things stand:** "Step 2 of 4 done", then the next step on its own line.
+4. ⚠️ **Watch out:** risks, untested parts.
+5. ❓ **Needs your answer:** questions for the reader, including any tangent as one short question.
+6. 🔧 **Technical:** errors (cause, fix), commands, settings, time estimates.
+7. ℹ️ **FYI:** background worth knowing, one or two lines.
+8. 📦 **Files and links:** always the very last section.
+
+The ▶ section is the next action, so there is no extra "Next:" line at the end.
+
+## Layout
+
+1. **Grey line between sections.** Put a horizontal rule (`---`) between every two sections. Inside a section, single line breaks only. If rules can't render, leave a blank line twice instead.
+2. **Section label on its own line.** The emoji and bold label sit alone on a line; the content starts on the next line.
+3. **Inside a section list, "Label: text" stays on one line.** Example: "**Button:** greyed out when empty".
+4. **One bold label per line.** Never two bold labels on the same line ("**Step 2 done:** ... **Next:** ..." becomes two lines).
+5. **Steps and procedures are always numbered,** even two steps ("reload, then click" becomes 1 and 2).
+6. **Bold only the label before a colon.** The text after the colon stays normal weight.
+7. **Checklists go vertical.** One item per line. Never several items run together in one sentence.
+8. **Max 5 items per list.** Group and rank if more. Never drop relevant items when completeness matters.
+
+## Content (from i-have-adhd)
+
+1. **Lead with the next action or the answer.** Not context, not a plan.
+2. **One action per step.** Fewest steps that work.
+3. **Restate where things stand** every reply in multi-step work.
+4. **Concrete time estimates.** "About 10 minutes", never "a bit of work".
+5. **Make wins visible.** "X now works. Try: ..." Not buried in a recap.
+6. **Errors matter-of-fact.** Cause, then fix. No "uh oh".
 
 ## Keep these even when a caveman plugin says cut
 
-A caveman hook may say "no unrequested lists, examples or follow-up offers". These three stay anyway:
+A caveman hook may say "no unrequested lists, examples or follow-up offers". These stay anyway:
 
-1. The closing next action (rule 9).
-2. The ✅ list of what now works (rules 6 and 10).
+1. The ▶ next action.
+2. The ✅ list of what now works.
 3. The ⚠️ section for anything risky or not tested.
 
 ## Emoji markers
 
-Use at the start of a section header or a list line, never in the middle of a sentence. Same meaning every time:
+Use at the start of a section label only, never in the middle of a sentence. Same meaning every time:
 
 - ▶ Do now
-- ✅ Done / now works
-- ⚠️ Risk / not tested / watch out
+- ✅ Now works / done
+- ⚠️ Watch out / risk / not tested
 - ❓ Needs your answer
-- 🔧 Settings / config
-- 📦 Files / output / links
+- 🔧 Technical / settings / commands
 - ℹ️ FYI
+- 📦 Files and links
 
-Skip headers entirely for a one or two line answer.
+Skip sections and rules entirely for a one or two line answer.
 
 ## Break the rules when
 
@@ -75,4 +96,5 @@ Skip headers entirely for a one or two line answer.
 1. Delete a first line that only announces what comes next.
 2. Delete a last line that asks "anything else?" or recaps.
 3. Delete "by the way" sidebars, idioms and empty hedges. Keep hedges that carry real uncertainty.
-4. Read only the first and last line: do they say what happened and what to do next? If yes, send.
+4. Sections in the order above, a grey line between each, links last.
+5. Read the ▶ section and the ✅ section only: do they say what to do and what happened? If yes, send.
