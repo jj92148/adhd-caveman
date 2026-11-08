@@ -45,6 +45,7 @@ Questions first, then actions and risks, technical next, links last. Use only th
 6. **Bold only the label before a colon.** The text after the colon stays normal weight.
 7. **Checklists go vertical.** One item per line. Never several items run together in one sentence.
 8. **Max 5 items per list.** Group and rank if more. Never drop relevant items when completeness matters.
+9. **Room to read.** Never stack plain lines one under another (several "**Label:** text" lines in a row read as one cramped paragraph). Make them a dot list, which gets line spacing, or put a blank line between each. Numbered and dot lists are fine as they are.
 
 ## Content (from i-have-adhd)
 
