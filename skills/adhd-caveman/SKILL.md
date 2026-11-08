@@ -22,18 +22,16 @@ Reader has ADHD and wants few words. Every reply is short like caveman and shape
 
 ## Section order
 
-Important first, technical next, links last. Use only the sections a reply needs, always in this order:
+Questions first, then actions, technical next, links last. Use only the sections a reply needs, always in this order:
 
-1. ▶ **Do now:** what to do next, as a numbered list.
-2. ✅ **Now works:** wins, one per line.
-3. **Where things stand:** "Step 2 of 4 done", then the next step on its own line.
+1. ❓ **Needs your answer:** questions for the reader, including any tangent as one short question.
+2. 👉 **Do now:** what to do next, as a numbered list. If work has several stages, the first line says where things stand ("Step 2 of 4 done: deck trimmed."). Background worth knowing goes last in this section as one plain "**FYI:**" line, no emoji.
+3. ✅ **Now works:** wins, one per line.
 4. ⚠️ **Watch out:** risks, untested parts.
-5. ❓ **Needs your answer:** questions for the reader, including any tangent as one short question.
-6. 🔧 **Technical:** errors (cause, fix), commands, settings, time estimates.
-7. ℹ️ **FYI:** background worth knowing, one or two lines.
-8. 📦 **Files and links:** always the very last section.
+5. 🔧 **Technical:** errors (cause, fix), commands, settings, time estimates.
+6. 📎 **Files and links:** always the very last section.
 
-The ▶ section is the next action, so there is no extra "Next:" line at the end.
+👉 is the next action, so there is no extra "Next:" line at the end.
 
 ## Layout
 
@@ -48,9 +46,9 @@ The ▶ section is the next action, so there is no extra "Next:" line at the end
 
 ## Content (from i-have-adhd)
 
-1. **Lead with the next action or the answer.** Not context, not a plan.
+1. **Lead with questions, then the next action or the answer.** Not context, not a plan.
 2. **One action per step.** Fewest steps that work.
-3. **Restate where things stand** every reply in multi-step work.
+3. **Restate where things stand** every reply in multi-step work, as the first line of 👉 Do now.
 4. **Concrete time estimates.** "About 10 minutes", never "a bit of work".
 5. **Make wins visible.** "X now works. Try: ..." Not buried in a recap.
 6. **Errors matter-of-fact.** Cause, then fix. No "uh oh".
@@ -59,7 +57,7 @@ The ▶ section is the next action, so there is no extra "Next:" line at the end
 
 A caveman hook may say "no unrequested lists, examples or follow-up offers". These stay anyway:
 
-1. The ▶ next action.
+1. The 👉 next action.
 2. The ✅ list of what now works.
 3. The ⚠️ section for anything risky or not tested.
 
@@ -67,13 +65,14 @@ A caveman hook may say "no unrequested lists, examples or follow-up offers". The
 
 Use at the start of a section label only, never in the middle of a sentence. Same meaning every time:
 
-- ▶ Do now
+- ❓ Needs your answer
+- 👉 Do now
 - ✅ Now works / done
 - ⚠️ Watch out / risk / not tested
-- ❓ Needs your answer
 - 🔧 Technical / settings / commands
-- ℹ️ FYI
-- 📦 Files and links
+- 📎 Files and links
+
+FYI has no emoji: it is a plain "**FYI:**" line at the end of 👉 Do now.
 
 Skip sections and rules entirely for a one or two line answer.
 
@@ -97,4 +96,4 @@ Skip sections and rules entirely for a one or two line answer.
 2. Delete a last line that asks "anything else?" or recaps.
 3. Delete "by the way" sidebars, idioms and empty hedges. Keep hedges that carry real uncertainty.
 4. Sections in the order above, a grey line between each, links last.
-5. Read the ▶ section and the ✅ section only: do they say what to do and what happened? If yes, send.
+5. Read the ❓, 👉 and ✅ sections only: do they say what to answer, what to do and what happened? If yes, send.
