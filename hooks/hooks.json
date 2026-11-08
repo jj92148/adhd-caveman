@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "N=$(command -v node || echo /opt/homebrew/bin/node); [ -x \"$N\" ] || exit 0; \"$N\" \"${CLAUDE_PLUGIN_ROOT}/hooks/session-start.js\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}

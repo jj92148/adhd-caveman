@@ -1,7 +1,10 @@
 {
   "name": "adhd-caveman",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Caveman-short words shaped for an ADHD reader: next action first, emoji section markers, vertical checklists, visible wins, one next step at the end.",
-  "author": { "name": "jj92148", "url": "https://github.com/jj92148" },
+  "author": {
+    "name": "jj92148",
+    "url": "https://github.com/jj92148"
+  },
   "outputStyles": "./output-styles/"
 }

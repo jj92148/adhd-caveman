@@ -29,9 +29,11 @@ In Claude Code:
 /plugin install adhd-caveman@adhd-caveman
 ```
 
-Then turn it on:
-- **Always on:** Settings, Claude Code, Output style, pick "adhd-caveman" (or `/config` in the terminal).
-- **One session:** type `/adhd-caveman`. Say "stop adhd-caveman" to turn it off.
+It is on in every new session from then on: a SessionStart hook (`hooks/session-start.js`) loads the rules at start, resume and after compaction. Say "stop adhd-caveman" to turn it off for one session, or disable the plugin to turn it off everywhere.
+
+Other ways to use it:
+- **Output style:** Settings, Claude Code, Output style, pick "adhd-caveman". Use this or the hook, not both.
+- **One session by hand:** type `/adhd-caveman`.
 
 This repo is private, so installing needs a GitHub login with access to it.
 
