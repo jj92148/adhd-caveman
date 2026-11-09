@@ -1,23 +1,44 @@
 # adhd-caveman
 
-A Claude Code output style and skill. Caveman-short words, shaped for a reader with ADHD.
+A Claude Code output style and skill for a reader with ADHD.
 
-Built from two ideas:
-- **caveman:** short words, no filler, code and errors kept exact.
-- **i-have-adhd:** next action first, numbered steps, visible wins, one next step at the end.
+Version 2 is built on the original [i-have-adhd](https://github.com/ayghri/i-have-adhd) rules (next action first, numbered steps, visible wins, one next step at the end), plus:
+- **Six fixed markers:** ❓ Need from you, 👉 Do next, ✅ Done, ⚠️ Risk, 🔹 Info, 📎 Files and links. Each always means the same thing.
+- **Titles that stand alone:** "Extra time if we rebuild", not "Time".
+- **Set order:** same kinds of section sit together, in the order above. Links always last.
+- **Layout:** headings on their own line, bullets and numbered lists, `**Label:** text` as dot points.
+- **Shape fits the question:** only the sections a reply needs; a yes/no stays one line.
+
+Version 1 (caveman-short words, fixed section list) is in git history up to `1.7.0`.
 
 ## What a reply looks like
 
 ```
-▶ Reload the extension at chrome://extensions.
+Yes, no issue. A textless version is easier, with no burned-in text to cover.
 
-✅ Now works:
-- Tools cards all one height
-- Edit box has a hover zoom
+---
 
-⚠️ Not tested: real Gemini model.
+👉 **Backup plan if Jeremy can't send it**
+1. Get the edit timings from Jeremy (an EDL or XML)
+2. Pull the matching clips from Google Drive
+3. Rebuild the cut to those timings, then apply the graphics
 
-Next: open the library and hover a screenshot.
+---
+
+⚠️ **Rebuild risks**
+- **Colour:** raw Drive clips may not have Jeremy's grade
+- **Deadline:** rebuilding without an EDL is tight
+
+---
+
+🔹 **Why textless is better**
+- **Graphics:** they go straight on top, with no masking over old titles
+
+---
+
+🔹 **Extra time if we rebuild**
+- **With an EDL:** about half a day
+- **Matching by eye:** about a full day
 ```
 
 ## Install
@@ -41,6 +62,6 @@ This repo is private, so installing needs a GitHub login with access to it.
 
 See [output-styles/adhd-caveman.md](output-styles/adhd-caveman.md). The skill in `skills/adhd-caveman` holds the same rules.
 
-## Works with caveman
+## Works with i-have-adhd
 
-If the caveman plugin is also on, its hook says to cut unrequested lists and follow-ups. adhd-caveman keeps three things anyway: the closing next action, the ✅ list, and the ⚠️ section. Turning caveman off avoids the tug of war.
+Version 2 already holds the i-have-adhd rules. If i-have-adhd's always-on flag (`~/.claude/.i-have-adhd-always`) is also set, both rule sets load; remove the flag or disable one plugin.

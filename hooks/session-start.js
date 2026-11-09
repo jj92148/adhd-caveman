@@ -11,5 +11,5 @@ try {
 } catch (e) {
   process.exit(0); // never block a session
 }
-const context = 'ADHD-CAVEMAN MODE ACTIVE. Follow these reply rules in every reply until the reader says "stop adhd-caveman" or "normal mode".\n\n' + rules;
+const context = 'ADHD-CAVEMAN MODE ACTIVE (v2: i-have-adhd rules, six fixed heading markers). Follow these reply rules in every reply until the reader says "stop adhd-caveman" or "normal mode".\n\n' + rules;
 process.stdout.write(JSON.stringify({ hookSpecificOutput: { hookEventName: 'SessionStart', additionalContext: context } }));
